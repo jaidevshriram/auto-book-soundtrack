@@ -1,0 +1,12 @@
+*~
+*.swp
+*.mex*
+*.dll
+
+*.pyc
+*tmp*
+*.pdf
+
+.directory
+
+ext/
