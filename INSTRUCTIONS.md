@@ -13,7 +13,6 @@ Refer to `data/hp` to see how the data is typically stored.
 
 # Steps
 
-
 ## 1. Video Processing
 
 1. Clone the repository here - https://github.com/xavierpuigf/shotdetection/ and follow installation instructions as described.
@@ -57,7 +56,13 @@ python scripts/jsonify_book.py data/{movie_name}/book processed/{movie_name}/boo
 python scripts/extract-text-emotion.py data/{movie_name}/book processed/{movie_name}/book_emotions/
 ```
 
-3. Segment the book
+3. Process the book using BookNLP
+
+```
+python scripts/book_process.py data/{movie_name}/book processed/{movie_name}/book/
+```
+
+4. Segment the book
 
 ```
 python scripts/text-segment.py data/{movie_name}/book processed/{movie_name}/text_features processed/{movie_name} text_segments/
